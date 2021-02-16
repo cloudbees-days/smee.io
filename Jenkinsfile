@@ -16,7 +16,7 @@ pipeline {
         tag '*'
       }
       steps {
-        containerBuildPushGeneric("vuejs-app/cloudbees-days/smee-io", "${TAG_NAME}", "core-workshop") {
+        containerBuildPushGeneric("cloudbees-days/smee-io", "${TAG_NAME}", "core-workshop") {
           checkout scm
           gitShortCommit()
         }
