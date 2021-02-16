@@ -1,4 +1,5 @@
 library 'pipeline-library'
+def repoOwner = "cloudbees-days"
 pipeline {
   agent none
   options {
@@ -13,6 +14,7 @@ pipeline {
         tag '*'
       }
       steps {
+        gitShortCommit()
         containerBuildPushGeneric("vuejs-app/cloudbees-days/smee-io", "${TAG_NAME}", "core-workshop") {
           checkout scm
         }
