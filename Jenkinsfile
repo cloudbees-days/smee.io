@@ -10,7 +10,7 @@ pipeline {
     stage('Build & Push Image') {
       when {
         beforeAgent true
-        tag '*"
+        tag '*'
       }
       steps {
         containerBuildPushGeneric("vuejs-app/cloudbees-days/smee-io", "${TAG_NAME}", "core-workshop") {
