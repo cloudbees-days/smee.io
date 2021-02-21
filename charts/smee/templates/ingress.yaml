@@ -21,12 +21,12 @@ spec:
   tls:
     {{- range .Values.ingress.tls }}
     - hosts:
-        - "{{ $hostname }}"
+        - {{ $hostname }}
       secretName: {{ .secretName }}
     {{- end }}
   {{- end }}
   rules:
-    - host: "{{ $hostname }}"
+    - host: {{ $hostname }}
       http:
         paths:
           - path: /
