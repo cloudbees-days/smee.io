@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  smee:
+  - apiVersion: v2
+    appVersion: 0.5.0
+    created: "2021-02-21T15:22:47.136668069Z"
+    description: A Helm chart for smee
+    digest: e7a123c43a9132f98933836a01edefee88e53920eb397bd86ebcdc16b80504d1
+    name: smee
+    type: application
+    urls:
+    - https://cloudbees-days.github.io/smee.io/smee-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-02-21T15:22:47.13589179Z"
