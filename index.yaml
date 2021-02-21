@@ -3,12 +3,22 @@ entries:
   smee:
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2021-02-21T15:22:47.136668069Z"
+    created: "2021-02-21T18:36:05.400555698Z"
     description: A Helm chart for smee
-    digest: e7a123c43a9132f98933836a01edefee88e53920eb397bd86ebcdc16b80504d1
+    digest: 82e1234f26644f13e2688c5e52af9bdafeedef29ec357fd114ac975ee3803694
+    name: smee
+    type: application
+    urls:
+    - https://cloudbees-days.github.io/smee.io/smee-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 0.5.0
+    created: "2021-02-21T18:36:05.400052556Z"
+    description: A Helm chart for smee
+    digest: a9184cd21b480cbd8afd6d40f31348a02d704c41739c880c83ca6f71ee7ceec1
     name: smee
     type: application
     urls:
     - https://cloudbees-days.github.io/smee.io/smee-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-21T15:22:47.13589179Z"
+generated: "2021-02-21T18:36:05.399229923Z"
