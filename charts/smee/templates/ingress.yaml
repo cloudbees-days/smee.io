@@ -1,6 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $fullName := include "smee-server.fullname" . -}}
 {{- $svcPort := .Values.service.port -}}
+{{- $hostname  := .Values.ingress.host -}}
 {{- if semverCompare ">=1.14-0" .Capabilities.KubeVersion.GitVersion -}}
 apiVersion: networking.k8s.io/v1beta1
 {{- else -}}
@@ -20,12 +21,12 @@ spec:
   tls:
     {{- range .Values.ingress.tls }}
     - hosts:
-        - "{{ .Values.ingress.host }}"
+        - "{{ $hostname }}"
       secretName: {{ .secretName }}
     {{- end }}
   {{- end }}
   rules:
-    - host: "{{ .Values.ingress.host }}"
+    - host: "{{ $hostname }}"
       http:
         paths:
           - path: /
